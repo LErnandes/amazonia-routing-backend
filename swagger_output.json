@@ -1,0 +1,81 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "localhost:4000",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "User",
+      "description": "Endpoints",
+      "path": "/users"
+    },
+    {
+      "name": "Posts",
+      "description": "Endpoints",
+      "path": "/posts"
+    }
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "description": "",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/path/": {
+      "get": {
+        "tags": [
+          "Path"
+        ],
+        "description": "",
+        "parameters": [
+          {
+            "name": "start",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "object",
+            "in": "query",
+            "type": "string"
+          },
+          {
+            "name": "end",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  }
+}
