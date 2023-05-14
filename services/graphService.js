@@ -90,7 +90,7 @@ function Graph() {
 async function createGraph() {
     var graph = new Graph();
 
-    let matrix = await apiService.getMatrix();
+    let matrix = (await apiService.getMatrix()).data;
 
     for (const [key, value] of Object.entries(matrix)) {
         graph.addVertex(key, value);
@@ -104,4 +104,4 @@ function getPath(graph, start, end) {
     return graph.shortestPath(start, end);
 }
 
-module.exports = { createGraph, getPath };
+module.exports = { Graph, createGraph, getPath };
