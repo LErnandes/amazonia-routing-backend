@@ -34,3 +34,8 @@ yarn start
 ```
 yarn doc
 ```
+
+### Run tests
+```
+yarn test
+```
