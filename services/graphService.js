@@ -1,6 +1,11 @@
 const apiService = require("./apiService");
 
 
+/**
+ * Dijkstra's algorithm is a fundamental graph traversal algorithm that efficiently finds the shortest path between nodes in a weighted graph.
+ * https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+ */
+
 function PriorityQueue() {
   this._nodes = [];
 
