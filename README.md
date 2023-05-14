@@ -1,36 +1,36 @@
 # Project Routing Amazonia
 
 
-# Project Setup Using Docker
-## Build
+## Project Setup Using Docker
+### Build
 ```
 docker build -t routing_amazonia . 
 ```
 
-## Run
+### Run
 ```
 docker run -d -it -p 4000:4000 routing_amazonia
 ```
 
 
-# Project Setup Using Yarn
+## Project Setup Using Yarn
 
-## Instalation
+### Instalation
 ```
 yarn install
 ```
 
-## Run development mode
+### Run development mode
 ```
 yarn dev
 ```
 
-## Run production mode
+### Run production mode
 ```
 yarn start
 ```
 
-## Generate swagger documentation
+### Generate swagger documentation
 ```
 yarn doc
 ```
